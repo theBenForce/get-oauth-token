@@ -3,6 +3,9 @@
   <a href="https://www.npmjs.com/package/get-oauth-token" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/get-oauth-token" />
   </a>
+  <a href="https://github.com/theBenForce/get-oauth-token/actions/workflows/release.yml">
+    <img alt="Release Actions" src="https://github.com/theBenForce/get-oauth-token/actions/workflows/release.yml/badge.svg" />
+  </a>
   <a href="https://github.com/theBenForce/get-oauth-token/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
