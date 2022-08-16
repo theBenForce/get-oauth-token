@@ -1,0 +1,42 @@
+{
+  "name": "get-oauth-token",
+  "version": "1.0.0",
+  "description": "Run an OAuth login flow and display the final token",
+  "main": "dist/index.js",
+  "repository": "git@github.com:theBenForce/get-oauth-token.git",
+  "author": "Ben Force",
+  "license": "MIT",
+  "bin": {
+    "oauth": "./cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "oauth": "ts-node ./src/index.ts",
+    "lint": "npx eslint ."
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/inquirer": "^9.0.1",
+    "@types/listr": "^0.14.4",
+    "@types/node": "^18.7.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.3",
+    "eslint-plugin-sonarjs": "^0.15.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "commander": "^9.4.0",
+    "immer": "^9.0.15",
+    "inquirer": "^8.0.0",
+    "listr": "^0.14.3",
+    "open": "^8.4.0"
+  }
+}
