@@ -6,7 +6,7 @@
   <a href="https://github.com/theBenForce/get-oauth-token/actions/workflows/release.yml">
     <img alt="Release Actions" src="https://github.com/theBenForce/get-oauth-token/actions/workflows/release.yml/badge.svg" />
   </a>
-  <a href="https://github.com/theBenForce/get-oauth-token/README.md" target="_blank">
+  <a href="https://github.com/theBenForce/get-oauth-token/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
