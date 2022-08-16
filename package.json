@@ -13,7 +13,7 @@
     "build": "tsc",
     "oauth": "ts-node ./src/index.ts",
     "lint": "npx eslint .",
-    "semantic-release": "semantic-release"
+    "release": "npx semantic-release"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
