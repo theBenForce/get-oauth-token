@@ -53,8 +53,8 @@ jobs:
       - name: Install Node.js dependencies
         run: yarn install
 
+      - name: Build
+        run: yarn build
+
       - name: Semantic Release
-        uses: brpaz/action-semantic-release@v1
-        with:
-            dry_run: "false"
-            branch: main
+        run: yarn release
