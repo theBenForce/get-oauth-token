@@ -38,6 +38,7 @@ jobs:
   release:
     name: Release NPM
     runs-on: ubuntu-latest
+    environment: Release
     needs:
       - run-linters
 
