@@ -57,18 +57,26 @@ program.command('login [profile]')
 
         const createTokenSection = (title: string, token: string) => token ? `
         <h3>${title}</h3>
-        <a href="https://jwt.io/?token=${token}">View</a> | <a onClick="navigator.clipboard.writeText('${token}')">Copy</a>
+        <a href="https://jwt.io/?token=${token}">View</a> | <a onClick="javascript:copyToken('${title}', '${token}');" >Copy</a>
         <p>${token}</p>` : '';
 
         res.writeHead(200, undefined, {
           'content-type': 'application/html',
         });
         res.end(`<html>
-                    <body>
-                        ${createTokenSection('Access Token', tokenResponse.data.access_token)}
-                        ${createTokenSection('ID Token', tokenResponse.data.id_token)}
-                    </body>
-                </html>`);
+  <head>
+    <script>
+        function copyToken(title, token) {
+          navigator.clipboard.writeText(token);
+          alert("Copied the " + title);
+        }
+    </script>
+  </head>
+    <body>
+        ${createTokenSection('Access Token', tokenResponse.data.access_token)}
+        ${createTokenSection('ID Token', tokenResponse.data.id_token)}
+    </body>
+</html>`);
 
         server?.close((err) => {
           if (err) {
