@@ -57,7 +57,7 @@ program.command('login [profile]')
 
         const createTokenSection = (title: string, token: string) => `
         <h3>${title}</h3>
-        <a href="https://jwt.io/?token=${token}">View</a>
+        <a href="https://jwt.io/?token=${token}">View</a> | <a onClick="navigator.clipboard.writeText('${token}')>Copy</a>
         <p>${token}</p>`;
 
         res.writeHead(200, undefined, {
