@@ -55,10 +55,10 @@ program.command('login [profile]')
 
         console.info(tokenResponse.data);
 
-        const createTokenSection = (title: string, token: string) => `
+        const createTokenSection = (title: string, token: string) => token ? `
         <h3>${title}</h3>
         <a href="https://jwt.io/?token=${token}">View</a> | <a onClick="navigator.clipboard.writeText('${token}')>Copy</a>
-        <p>${token}</p>`;
+        <p>${token}</p>` : '';
 
         res.writeHead(200, undefined, {
           'content-type': 'application/html',
